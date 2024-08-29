@@ -39,7 +39,7 @@ body {
 }
 
 .image {
-    height: 40vh;
+    height: 30vh;
     background-image: url('images/image-product-mobile.jpg');
     background-size: cover;
     /* This will make the image cover the entire element */
