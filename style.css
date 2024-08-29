@@ -1,0 +1,158 @@
+:root {
+
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 10px 0;
+
+}
+
+body {
+    background-color: var(--Cream);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 350px;
+}
+
+.image {
+    height: 230px;
+    background-image: url('images/image-product-mobile.jpg');
+    background-size: cover;
+    /* This will make the image cover the entire element */
+    background-position: center;
+    /* This will center the image */
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+
+.info {
+    padding: 0px 27px 0px 27px;
+    height: 350px;
+}
+
+.text1 {
+    font-size: 13px;
+    color: var(--Dark_grayish_blue);
+    font-family: 'Montserrat';
+    letter-spacing: 5px;
+
+}
+
+.text2 {
+    font-size: 32px;
+    font-family: 'Fraunces';
+    color: var(--Very_dark_blue);
+    margin-bottom: 10px;
+}
+
+.text3 {
+    font-size: 14px;
+    font-family: 'Montserrat';
+    line-height: 20px;
+    color: var(--Dark_grayish_blue);
+}
+
+.text4 {
+    font-size: 32px;
+    color: var(--Dark_cyan);
+    font-family: 'Fraunces';
+}
+
+.text5 {
+    font-size: 14px;
+    color: var(--Dark_grayish_blue);
+    font-family: 'Montserrat';
+    text-decoration: line-through;
+    margin-left: 15px;
+
+}
+
+.mytext {
+    display: flex;
+    align-items: center;
+}
+
+
+button img {
+    margin-right: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Dark_cyan);
+    width: 100%;
+    color: var(--White);
+    border-radius: 10px;
+    height: 45px;
+    border: 0;
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat' ;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+button:hover {
+    background-color: darkcyan; /* Slightly lighter shade */
+}
+
+button:active {
+    background-color: rgb(5, 65, 5);
+    transform: scale(0.98); 
+}
+
+[class*='col-'] {
+    width: 100%;
+}
+
+
+@media only screen and (min-width:600px) {
+
+    .col-1,
+    .col-2 {
+        width: 50%;
+    }
+
+    .container {
+        flex-direction: row;
+        background-image: url('images/image-product-desktop.jpg');
+    }
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
