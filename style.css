@@ -35,11 +35,11 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 350px;
+    width: 100%px;
 }
 
 .image {
-    height: 240px;
+    height: 40vh;
     background-image: url('images/image-product-mobile.jpg');
     background-size: cover;
     /* This will make the image cover the entire element */
