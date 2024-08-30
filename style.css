@@ -12,7 +12,7 @@
 }
 
 p {
-    margin: 10px 0;
+    margin: 0.5em 0;
 
 }
 
@@ -28,7 +28,9 @@ body {
 }
 
 .container {
-    max-width: 360px;
+    width: 75%;
+    max-width:520px;
+    
     margin: 0 auto;
     background-color: var(--White);
     border-radius: 10px;
@@ -39,7 +41,8 @@ body {
 }
 
 .image {
-    height: 30vh;
+    
+    height: 35vh;
     background-image: url('images/image-product-mobile.jpg');
     background-size: cover;
     /* This will make the image cover the entire element */
@@ -52,7 +55,6 @@ body {
 
 .info {
     padding: 0px 27px 20px 27px;
-    
 }
 
 .text1 {
@@ -88,14 +90,13 @@ body {
     color: var(--Dark_grayish_blue);
     font-family: 'Montserrat';
     text-decoration: line-through;
-    margin-left: 15px;
+    margin-left: 1em;
 
 }
 
 .mytext {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 
@@ -129,21 +130,31 @@ button:active {
     transform: scale(0.98); 
 }
 
+
 [class*='col-'] {
     width: 100%;
 }
 
 
-@media only screen and (min-width:600px) {
+
+@media only screen and (min-width:520px) {
 
     .col-1,
     .col-2 {
         width: 50%;
     }
-
-    .container {
+    .container{
+        display: flex;
         flex-direction: row;
+        min-width: 520px;
+    }
+    .image {
+        height: 429px;
         background-image: url('images/image-product-desktop.jpg');
+        background-position: cneter;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
     }
 }
 
